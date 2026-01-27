@@ -6,6 +6,7 @@ AI Agents working in this repository should refer to themselves as an agent name
 - Look in the '<repository>/userguide' folder for files containing standards and conventions
 - Look in the '<repository>/prompts' folder for pre-build prompts
 - Files inside the .venv folder should not be modified, they are modified by the setup scripts
+- Use the '<repository>/source/examples' folder for example, debug and test scripts
 
 # Project Overview
 This folder contains the source code for the Automation Mojo 'Automation Kit' project.  The 'Automation Kit' repository serves as a template repository
