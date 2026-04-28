@@ -19,6 +19,7 @@ packages = [{include="mojo", from="source/packages"}]
 python = ">=3.10,<4.0"
 pyyaml = ">6.0.1"
 
+automojo-arcli = { git = "https://github.com/automationmojo/automojo-arcli.git", branch = "main" }
 automojo-configuration = { git = "https://github.com/automationmojo/automojo-configuration.git", branch = "main" }
 automojo-credentials = { git = "https://github.com/automationmojo/automojo-credentials.git", branch = "main" }
 automojo-dataprofiles = { git = "https://github.com/automationmojo/automojo-dataprofiles.git", branch = "main" }
@@ -26,6 +27,10 @@ automojo-errors = { git = "https://github.com/automationmojo/automojo-errors.git
 automojo-extension = { git = "https://github.com/automationmojo/automojo-extension.git", branch = "main" }
 automojo-interfaces = { git = "https://github.com/automationmojo/automojo-interfaces.git", branch = "main" }
 automojo-interop = { git = "https://github.com/automationmojo/automojo-interop.git", branch = "main" }
+automojo-interop-ext-bluetooth = { git = "https://github.com/automationmojo/automojo-interop-ext-bluetooth.git", branch = "main" }
+automojo-interop-ext-can = { git = "https://github.com/automationmojo/automojo-interop-ext-can.git", branch = "main" }
+automojo-interop-ext-tasker = { git = "https://github.com/automationmojo/automojo-interop-ext-tasker.git", branch = "main" }
+automojo-interop-ext-upnp = { git = "https://github.com/automationmojo/automojo-interop-ext-upnp.git", branch = "main" }
 automojo-landscaping = { git = "https://github.com/automationmojo/automojo-landscaping.git", branch = "main" }
 automojo-networking = { git = "https://github.com/automationmojo/automojo-networking.git", branch = "main" }
 automojo-runtime = { git = "https://github.com/automationmojo/automojo-runtime.git", branch = "main" }

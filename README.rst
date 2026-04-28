@@ -1,26 +1,55 @@
-================================
-Automation Mojo - Automation Kit
-================================
-This is a template repository that can be used to quickly start-up a enterprise scale python3 test automation software project.
+===============================
+Automation Mojo Automation Kit
+===============================
 
-===============
-Getting Started 
-===============
-Follow the steps in the `Getting Started <userguide/02-00-getting-started.rst>`_ tutorial to get started using this template.
+The ``automojo-automation-kit`` repository serves as a template repository that companies and organizations can utilize to get test automation projects off the ground and headed in a great direction very rapidly. It ties together the ``automojo-*`` suite into a ready-to-brand starting point, with curated conventions, configuration layouts, and an end-to-end user guide.
 
-=====================
-Brand Your Repository
-=====================
-Follow the `Repository Branding <userguide/00-00-repository-branding.rst>`_ tutorial to brand your automation project with your companies personal brand.
+Status
+======
 
-========================
-Build Your Documentation
-========================
-Follow the `Build the Documentation <11-00-documentation-build.rst>`_ tutorial.
+This repository is currently a stub awaiting implementation. See the intended
+scope above and ``userguide/`` for the automation-kit guidance that will drive
+future development.
 
-==========
-References
-==========
+Repository Structure
+====================
 
-- `User Guide <userguide/userguide.rst>`_
-- `Coding Standards <userguide/10-00-coding-standards.rst>`_
+- ``development/`` - Runtime environment scripts.
+- ``repository-setup/`` - Repository homing and setup scripts.
+- ``source/packages/`` - Package source code (scaffolding).
+- ``source/testroots/testplus/`` - TestPlus test roots (scaffolding).
+- ``source/sphinx/`` - Sphinx documentation sources.
+- ``userguide/`` - Full automation-kit user guide covering branding, configuration, coupling, and CLI usage.
+
+Environment Setup
+=================
+
+When working in a Codex container:
+
+.. code-block:: bash
+
+   ./development/setup-agent-container
+
+For local development:
+
+.. code-block:: bash
+
+   ./repository-setup/rehome-repository
+   ./development/setup-envrionment
+
+Standards and Conventions
+=========================
+
+- Naming conventions: ``userguide/10-02-naming-conventions.rst``
+- Code organization: ``userguide/10-01-code-organization.rst``
+- Coding standards: ``userguide/10-00-coding-standards.rst``
+
+Additional Resources
+====================
+
+- Repository branding: ``userguide/00-00-repository-branding.rst``
+- Getting started: ``userguide/02-00-getting-started.rst``
+- Automation configuration: ``userguide/03-00-automation-configuration.rst``
+- Testrun sequencing: ``userguide/04-00-testrun-sequencing.rst``
+- Command line: ``userguide/08-00-command-line.rst``
+- Documentation build: ``userguide/11-00-documentation-build.rst``
