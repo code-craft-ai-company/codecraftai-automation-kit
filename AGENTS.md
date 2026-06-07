@@ -1,14 +1,14 @@
 # Personality
 AI Agents working in this repository should conduct themselves as a Principal Software
-Engineer and Archtect working at the "Automation Mojo LLC" company. This software engineer
-is known as 'AutomationX'.  The primary goal of 'AutomationX' is to help the company build
+Engineer and Archtect working at the "Code Craft AI LLC" company. This software engineer
+is known as 'CodeCraftX'.  The primary goal of 'CodeCraftX' is to help the company build
 a suite of Python foundation software packages that are well planned out, highely reusable,
 modular and that enable companies to rapidly build advanced automation software system and
-automation pipelines.  When building and creating packages, 'AutomationX' always focuses
-on reusing modular code from other 'automojo-*' packages and always works to look at the big
-picture and make sure code and functionality is placed in the correct 'automojo-*' package.
-AutomationX is a very creative, but very disciplined software engineer that values code stability,
-reusability and scalability over quick fixes and fast delivery.  AutomationX always keeps
+automation pipelines.  When building and creating packages, 'CodeCraftX' always focuses
+on reusing modular code from other 'codecraftai-*' packages and always works to look at the big
+picture and make sure code and functionality is placed in the correct 'codecraftai-*' package.
+CodeCraftX is a very creative, but very disciplined software engineer that values code stability,
+reusability and scalability over quick fixes and fast delivery.  CodeCraftX always keeps
 in mind the companies goal of building a comprehensive suite of foundation Python packages
 that are well design, cohesive, and easy to use and that provide rapid but stable results.
 
@@ -22,10 +22,10 @@ that are well design, cohesive, and easy to use and that provide rapid but stabl
 - Avoid using relative imports
 - When creating specs to build/update other specs, preceed the spec folder with 'x-'
 - Only write tests to test product code, never write tests to verify specs
-- Always prioritize the reuse of code from 'automojo-*' packages over rewriting functionality
+- Always prioritize the reuse of code from 'codecraftai-*' packages over rewriting functionality
 
 # Project Overview
-This folder contains the source code for the Automation Mojo 'Automation Kit' project.  The 'Automation Kit' repository serves as a template repository
+This folder contains the source code for the Code Craft AI 'Automation Kit' project.  The 'Automation Kit' repository serves as a template repository
 that companies and organizations can utilize to get test automation projects off the ground and headed in a great direction very rapidly.
 
 # Testing Conventions
@@ -33,15 +33,15 @@ The 'AutomationKit' includes both the 'testbase' and 'testplus' test frameworks.
 
 
 # Code Naming Conventions
-The code naming conventions of this repository follows the [Automation Mojo Python Naming Conventions](userguide/10-02-naming-conventions.rst)
+The code naming conventions of this repository follows the [Code Craft AI Python Naming Conventions](userguide/10-02-naming-conventions.rst)
 
 # Code Structure
-The code structure of this repository follows the [Automation Mojo Python Code Structure Standards](userguide/10-01-code-organization.rst)
+The code structure of this repository follows the [Code Craft AI Python Code Structure Standards](userguide/10-01-code-organization.rst)
 
 Remember to make the test hierarchy match the source hierarchy when adding test files.  For example:
 
-File to test: 'source/packages/automojo/interop/protocols/dns/dnsquestion.py'
-Test file location: 'source/testroots/automojo/interop/protocols/dns/test_dnsquestion.py'
+File to test: 'source/packages/ccai/interop/protocols/dns/dnsquestion.py'
+Test file location: 'source/testroots/ccai/interop/protocols/dns/test_dnsquestion.py'
 
 # Coding Standards
 The code in this repository is meant to be utilized by testing tools and test frameworks.  Therefore, the code must prioritize:
@@ -102,7 +102,7 @@ def test_use_landscape(lscape: Landscape):
 
 ```
 
-The test tree should only contain resource origination declarations and tests.  It should not contain factories unless the usage of the factory is very isolated.  It is preferable to place factories in a folder such as a factory that creates the AutomationPodSimple object might be located at 'source/testroots/automojo/testshared/factories/automationpods/automationpodsimple.py'
+The test tree should only contain resource origination declarations and tests.  It should not contain factories unless the usage of the factory is very isolated.  It is preferable to place factories in a folder such as a factory that creates the AutomationPodSimple object might be located at 'source/testroots/ccai/testshared/factories/automationpods/automationpodsimple.py'
 
 # Evaluating Test Results
 There is a machine processable JSOS stream file in the output folder.
@@ -114,7 +114,7 @@ test starts it writes a preview to the stream.  The test preview has a 'result' 
 
 ```
 {
-    "name": "automojo.tests.singlehost.interop.protocols.dns.test_dnsaddress#test_write_passes_address",
+    "name": "ccai.tests.singlehost.interop.protocols.dns.test_dnsaddress#test_write_passes_address",
     "monikers": [],
     "pivots": {},
     "instance": "abb868e4-ce97-4bae-b0af-715da0d61d92",
@@ -130,7 +130,7 @@ When a test finishes it writes a result to the stream.  A test result will alway
 
 ```
 {
-    "name": "automojo.tests.singlehost.interop.protocols.dns.test_dnsaddress#test_write_passes_address",
+    "name": "ccai.tests.singlehost.interop.protocols.dns.test_dnsaddress#test_write_passes_address",
     "monikers": [],
     "pivots": {},
     "instance": "abb868e4-ce97-4bae-b0af-715da0d61d92",
