@@ -1,8 +1,8 @@
 ===============================
-Automation Mojo Automation Kit
+Code Craft AI Automation Kit
 ===============================
 
-The ``automojo-automation-kit`` repository serves as a template repository that companies and organizations can utilize to get test automation projects off the ground and headed in a great direction very rapidly. It ties together the ``automojo-*`` suite into a ready-to-brand starting point, with curated conventions, configuration layouts, and an end-to-end user guide.
+The ``codecraftai-automation-kit`` repository serves as a template repository that companies and organizations can utilize to get test automation projects off the ground and headed in a great direction very rapidly. It ties together the ``codecraftai-*`` suite into a ready-to-brand starting point, with curated conventions, configuration layouts, and an end-to-end user guide.
 
 Status
 ======
