@@ -2,22 +2,22 @@
 name = "codecraftai-automationkit"
 description = "Code Craft AI - Automation Kit"
 version = "0.0.1"
-authors = []
+authors = ["Myron Walker <myron.walker@gmail.com>"]
 readme = "README.rst"
-license = "LICENSE.txt"
+license = "LicenseRef-CodeCraftAI-Dual-License"
 classifiers = [
     "Programming Language :: Python :: 3",
-    "License :: OSI Approved :: MIT License",
+    "License :: Other/Proprietary License",
     "Operating System :: POSIX"
 ]
 keywords = [
     "python"
 ]
-packages = [{include="mojo", from="source/packages"}]
+packages = [{include="ccai", from="source/packages"}]
 
 [tool.poetry.dependencies]
 python = ">=3.10,<4.0"
-pyyaml = ">6.0.1"
+pyyaml = "^6.0.1"
 
 codecraftai-arcli = { git = "https://github.com/automationmojo/codecraftai-arcli.git", branch = "main" }
 codecraftai-configuration = { git = "https://github.com/automationmojo/codecraftai-configuration.git", branch = "main" }
@@ -44,8 +44,6 @@ codecraftai-xmodules = { git = "https://github.com/automationmojo/codecraftai-xm
 myst-parser = "^0.18.1"
 sphinx = ">=1.6,<6"
 sphinx-rtd-theme = "^1.1.1"
-
-[tool.poetry.group.dbio.dependencies]
 
 [build-system]
 requires = ["poetry-core"]

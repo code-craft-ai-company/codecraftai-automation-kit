@@ -1,6 +1,0 @@
-Some License
-
-Copyright (c) Copyright <year>, <company>
-
-<License Detail>
-
