@@ -650,7 +650,7 @@ pymongo = ["pymongo (>=4.13.2,<5.0.0)"]
 type = "git"
 url = "https://github.com/automationmojo/codecraftai-configuration.git"
 reference = "main"
-resolved_reference = "5f1c0f9c5092b9a8f3e37cb086391f3aa793b2d0"
+resolved_reference = "2e13c3f7f1dc49e03d7a7275d709d8b338c32562"
 
 [[package]]
 name = "codecraftai-credentials"
@@ -669,7 +669,7 @@ codecraftai-errors = {git = "https://github.com/automationmojo/codecraftai-error
 type = "git"
 url = "https://github.com/automationmojo/codecraftai-credentials.git"
 reference = "main"
-resolved_reference = "72b2e1b570e7887a999d8038e894d5a561b89257"
+resolved_reference = "0c52375f9670cf6fbae22eb6ebf9a65182eeb0b9"
 
 [[package]]
 name = "codecraftai-dataprofiles"
@@ -801,7 +801,7 @@ rpyc = "^6.0.1"
 type = "git"
 url = "https://github.com/automationmojo/codecraftai-interop.git"
 reference = "main"
-resolved_reference = "1d05fc3467f76df00605158f7ce75551319ab55a"
+resolved_reference = "3e5c9e3d7083ceb129ca3d0626ce0ba940af4ab7"
 
 [[package]]
 name = "codecraftai-interop-ext-bluetooth"
@@ -822,7 +822,7 @@ codecraftai-landscaping = {git = "https://github.com/automationmojo/codecraftai-
 type = "git"
 url = "https://github.com/automationmojo/codecraftai-interop-ext-bluetooth.git"
 reference = "main"
-resolved_reference = "a81db591545f459fad4a8b6d20d046ba0578a892"
+resolved_reference = "6792887db2bdda2cd4f0356118de7d26d45c5e07"
 
 [[package]]
 name = "codecraftai-interop-ext-can"
@@ -843,7 +843,7 @@ python-can = "^4.6.1"
 type = "git"
 url = "https://github.com/automationmojo/codecraftai-interop-ext-can.git"
 reference = "main"
-resolved_reference = "e21e27e692fea24682d52d875ec72deca89d6e8c"
+resolved_reference = "fde89aa6a1d8c3415bd49b259027c6abbe34d1b4"
 
 [[package]]
 name = "codecraftai-interop-ext-tasker"
@@ -868,7 +868,7 @@ rpyc = "^6.0.1"
 type = "git"
 url = "https://github.com/automationmojo/codecraftai-interop-ext-tasker.git"
 reference = "main"
-resolved_reference = "c0f475e14926c40b9dba2cb8d24eadfa5cfac157"
+resolved_reference = "e27d6c4d7ec06a1e6a567234b0d0b4b635ec9c2b"
 
 [[package]]
 name = "codecraftai-interop-ext-upnp"
@@ -891,7 +891,7 @@ requests = "^2.32"
 type = "git"
 url = "https://github.com/automationmojo/codecraftai-interop-ext-upnp.git"
 reference = "main"
-resolved_reference = "0ab418a6f2cf1b9f7f22c7ca7f47270142e9c908"
+resolved_reference = "0dcd1ada258b5c037c986515391468c4ec92a3b5"
 
 [[package]]
 name = "codecraftai-landscaping"
@@ -924,7 +924,7 @@ pyyaml = "^6.0.2"
 type = "git"
 url = "https://github.com/automationmojo/codecraftai-landscaping.git"
 reference = "main"
-resolved_reference = "1d39d38ba35fe6d627831433b04f8fbb7b3d8a89"
+resolved_reference = "ea84b04f5655ea2525e0f0099813e81d5e31ce13"
 
 [[package]]
 name = "codecraftai-networking"
@@ -1037,7 +1037,7 @@ sqlalchemy-utils = "^0.42.0"
 type = "git"
 url = "https://github.com/automationmojo/codecraftai-storage-database.git"
 reference = "main"
-resolved_reference = "af369f0fe32414f2f2cc9bef40e321353bc532ad"
+resolved_reference = "6979500d1a86bc75a18a634fe30c47110025ce91"
 
 [[package]]
 name = "codecraftai-testbase"
@@ -1064,7 +1064,7 @@ pyyaml = "^6.0.2"
 type = "git"
 url = "https://github.com/automationmojo/codecraftai-testbase.git"
 reference = "main"
-resolved_reference = "e7a98b287998ed061fd3fd6b09655f7ee6446dc0"
+resolved_reference = "1b7eb659093974fa1276a56ab5f9f5d525e01b2e"
 
 [[package]]
 name = "codecraftai-testplus"
@@ -1098,7 +1098,7 @@ debugpy = "^1.8.12"
 type = "git"
 url = "https://github.com/automationmojo/codecraftai-testplus.git"
 reference = "main"
-resolved_reference = "bcb7eb45553979df0bed52d91be434be349cbfde"
+resolved_reference = "c5bb50c65172c7f0b367024236c7d18dbf67f80c"
 
 [[package]]
 name = "codecraftai-this-app"
