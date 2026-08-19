@@ -19,26 +19,26 @@ packages = [{include="ccai", from="source/packages"}]
 python = ">=3.10,<4.0"
 pyyaml = "^6.0.1"
 
-codecraftai-arcli = { git = "https://github.com/automationmojo/codecraftai-arcli.git", branch = "main" }
-codecraftai-configuration = { git = "https://github.com/automationmojo/codecraftai-configuration.git", branch = "main" }
-codecraftai-credentials = { git = "https://github.com/automationmojo/codecraftai-credentials.git", branch = "main" }
-codecraftai-dataprofiles = { git = "https://github.com/automationmojo/codecraftai-dataprofiles.git", branch = "main" }
-codecraftai-errors = { git = "https://github.com/automationmojo/codecraftai-errors.git", branch = "main" }
-codecraftai-extension = { git = "https://github.com/automationmojo/codecraftai-extension.git", branch = "main" }
-codecraftai-interfaces = { git = "https://github.com/automationmojo/codecraftai-interfaces.git", branch = "main" }
-codecraftai-interop = { git = "https://github.com/automationmojo/codecraftai-interop.git", branch = "main" }
-codecraftai-interop-ext-bluetooth = { git = "https://github.com/automationmojo/codecraftai-interop-ext-bluetooth.git", branch = "main" }
-codecraftai-interop-ext-can = { git = "https://github.com/automationmojo/codecraftai-interop-ext-can.git", branch = "main" }
-codecraftai-interop-ext-tasker = { git = "https://github.com/automationmojo/codecraftai-interop-ext-tasker.git", branch = "main" }
-codecraftai-interop-ext-upnp = { git = "https://github.com/automationmojo/codecraftai-interop-ext-upnp.git", branch = "main" }
-codecraftai-landscaping = { git = "https://github.com/automationmojo/codecraftai-landscaping.git", branch = "main" }
-codecraftai-networking = { git = "https://github.com/automationmojo/codecraftai-networking.git", branch = "main" }
-codecraftai-runtime = { git = "https://github.com/automationmojo/codecraftai-runtime.git", branch = "main" }
-codecraftai-storage-database = { git = "https://github.com/automationmojo/codecraftai-storage-database.git", branch = "main" }
-codecraftai-testbase = { git = "https://github.com/automationmojo/codecraftai-testbase.git", branch = "main" }
-codecraftai-testplus = { git = "https://github.com/automationmojo/codecraftai-testplus.git", branch = "main" }
-codecraftai-this-app = { git = "https://github.com/automationmojo/codecraftai-this-app.git", branch = "main" }
-codecraftai-xmodules = { git = "https://github.com/automationmojo/codecraftai-xmodules.git", branch = "main" }
+codecraftai-arcli = { git = "https://github.com/code-craft-ai-company/codecraftai-arcli.git", branch = "main" }
+codecraftai-configuration = { git = "https://github.com/code-craft-ai-company/codecraftai-configuration.git", branch = "main" }
+codecraftai-credentials = { git = "https://github.com/code-craft-ai-company/codecraftai-credentials.git", branch = "main" }
+codecraftai-dataprofiles = { git = "https://github.com/code-craft-ai-company/codecraftai-dataprofiles.git", branch = "main" }
+codecraftai-errors = { git = "https://github.com/code-craft-ai-company/codecraftai-errors.git", branch = "main" }
+codecraftai-extension = { git = "https://github.com/code-craft-ai-company/codecraftai-extension.git", branch = "main" }
+codecraftai-interfaces = { git = "https://github.com/code-craft-ai-company/codecraftai-interfaces.git", branch = "main" }
+codecraftai-interop = { git = "https://github.com/code-craft-ai-company/codecraftai-interop.git", branch = "main" }
+codecraftai-interop-ext-bluetooth = { git = "https://github.com/code-craft-ai-company/codecraftai-interop-ext-bluetooth.git", branch = "main" }
+codecraftai-interop-ext-can = { git = "https://github.com/code-craft-ai-company/codecraftai-interop-ext-can.git", branch = "main" }
+codecraftai-interop-ext-tasker = { git = "https://github.com/code-craft-ai-company/codecraftai-interop-ext-tasker.git", branch = "main" }
+codecraftai-interop-ext-upnp = { git = "https://github.com/code-craft-ai-company/codecraftai-interop-ext-upnp.git", branch = "main" }
+codecraftai-landscaping = { git = "https://github.com/code-craft-ai-company/codecraftai-landscaping.git", branch = "main" }
+codecraftai-networking = { git = "https://github.com/code-craft-ai-company/codecraftai-networking.git", branch = "main" }
+codecraftai-runtime = { git = "https://github.com/code-craft-ai-company/codecraftai-runtime.git", branch = "main" }
+codecraftai-storage-database = { git = "https://github.com/code-craft-ai-company/codecraftai-storage-database.git", branch = "main" }
+codecraftai-testbase = { git = "https://github.com/code-craft-ai-company/codecraftai-testbase.git", branch = "main" }
+codecraftai-testplus = { git = "https://github.com/code-craft-ai-company/codecraftai-testplus.git", branch = "main" }
+codecraftai-this-app = { git = "https://github.com/code-craft-ai-company/codecraftai-this-app.git", branch = "main" }
+codecraftai-xmodules = { git = "https://github.com/code-craft-ai-company/codecraftai-xmodules.git", branch = "main" }
 
 [tool.poetry.group.dev.dependencies]
 myst-parser = "^0.18.1"
