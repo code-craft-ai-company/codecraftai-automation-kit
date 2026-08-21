@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "codecraftai-automationkit"
 description = "Code Craft AI - Automation Kit"
-version = "0.0.1"
+version = "1.0.0"
 authors = ["Myron Walker <myron.walker@gmail.com>"]
 readme = "README.rst"
 license = "LicenseRef-CodeCraftAI-Dual-License"
@@ -19,31 +19,37 @@ packages = [{include="ccai", from="source/packages"}]
 python = ">=3.10,<4.0"
 pyyaml = "^6.0.1"
 
-codecraftai-arcli = { git = "https://github.com/code-craft-ai-company/codecraftai-arcli.git", branch = "main" }
-codecraftai-configuration = { git = "https://github.com/code-craft-ai-company/codecraftai-configuration.git", branch = "main" }
-codecraftai-credentials = { git = "https://github.com/code-craft-ai-company/codecraftai-credentials.git", branch = "main" }
-codecraftai-dataprofiles = { git = "https://github.com/code-craft-ai-company/codecraftai-dataprofiles.git", branch = "main" }
-codecraftai-errors = { git = "https://github.com/code-craft-ai-company/codecraftai-errors.git", branch = "main" }
-codecraftai-extension = { git = "https://github.com/code-craft-ai-company/codecraftai-extension.git", branch = "main" }
-codecraftai-interfaces = { git = "https://github.com/code-craft-ai-company/codecraftai-interfaces.git", branch = "main" }
-codecraftai-interop = { git = "https://github.com/code-craft-ai-company/codecraftai-interop.git", branch = "main" }
-codecraftai-interop-ext-bluetooth = { git = "https://github.com/code-craft-ai-company/codecraftai-interop-ext-bluetooth.git", branch = "main" }
-codecraftai-interop-ext-can = { git = "https://github.com/code-craft-ai-company/codecraftai-interop-ext-can.git", branch = "main" }
-codecraftai-interop-ext-tasker = { git = "https://github.com/code-craft-ai-company/codecraftai-interop-ext-tasker.git", branch = "main" }
-codecraftai-interop-ext-upnp = { git = "https://github.com/code-craft-ai-company/codecraftai-interop-ext-upnp.git", branch = "main" }
-codecraftai-landscaping = { git = "https://github.com/code-craft-ai-company/codecraftai-landscaping.git", branch = "main" }
-codecraftai-networking = { git = "https://github.com/code-craft-ai-company/codecraftai-networking.git", branch = "main" }
-codecraftai-runtime = { git = "https://github.com/code-craft-ai-company/codecraftai-runtime.git", branch = "main" }
-codecraftai-storage-database = { git = "https://github.com/code-craft-ai-company/codecraftai-storage-database.git", branch = "main" }
-codecraftai-testbase = { git = "https://github.com/code-craft-ai-company/codecraftai-testbase.git", branch = "main" }
-codecraftai-testplus = { git = "https://github.com/code-craft-ai-company/codecraftai-testplus.git", branch = "main" }
-codecraftai-this-app = { git = "https://github.com/code-craft-ai-company/codecraftai-this-app.git", branch = "main" }
-codecraftai-xmodules = { git = "https://github.com/code-craft-ai-company/codecraftai-xmodules.git", branch = "main" }
+codecraftai-arcli = { version = "<2.0.0", source = "codecraftai" }
+codecraftai-configuration = { version = "<2.0.0", source = "codecraftai" }
+codecraftai-credentials = { version = "<2.0.0", source = "codecraftai" }
+codecraftai-dataprofiles = { version = "<2.0.0", source = "codecraftai" }
+codecraftai-errors = { version = "<2.0.0", source = "codecraftai" }
+codecraftai-extension = { version = "<2.0.0", source = "codecraftai" }
+codecraftai-interfaces = { version = "<2.0.0", source = "codecraftai" }
+codecraftai-interop = { version = "<2.0.0", source = "codecraftai" }
+codecraftai-interop-ext-bluetooth = { version = "<2.0.0", source = "codecraftai" }
+codecraftai-interop-ext-can = { version = "<2.0.0", source = "codecraftai" }
+codecraftai-interop-ext-tasker = { version = "<2.0.0", source = "codecraftai" }
+codecraftai-interop-ext-upnp = { version = "<2.0.0", source = "codecraftai" }
+codecraftai-landscaping = { version = "<2.0.0", source = "codecraftai" }
+codecraftai-networking = { version = "<2.0.0", source = "codecraftai" }
+codecraftai-runtime = { version = "<2.0.0", source = "codecraftai" }
+codecraftai-storage-database = { version = "<2.0.0", source = "codecraftai" }
+codecraftai-testbase = { version = "<2.0.0", source = "codecraftai" }
+codecraftai-testplus = { version = "<2.0.0", source = "codecraftai" }
+codecraftai-this-app = { version = "<2.0.0", source = "codecraftai" }
+codecraftai-xmodules = { version = "<2.0.0", source = "codecraftai" }
 
 [tool.poetry.group.dev.dependencies]
 myst-parser = "^0.18.1"
 sphinx = ">=1.6,<6"
 sphinx-rtd-theme = "^1.1.1"
+
+
+[[tool.poetry.source]]
+name = "codecraftai"
+url = "https://code-craft.ai/licensed-repository/simple/"
+priority = "supplemental"
 
 [build-system]
 requires = ["poetry-core"]
