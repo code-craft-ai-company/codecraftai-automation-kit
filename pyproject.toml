@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "codecraftai-automationkit"
 description = "Code Craft AI - Automation Kit"
-version = "1.0.0"
+version = "1.0.1"
 authors = ["Myron Walker <myron.walker@gmail.com>"]
 readme = "README.rst"
 license = "LicenseRef-CodeCraftAI-Dual-License"
@@ -23,9 +23,8 @@ codecraftai-arcli = { version = "<2.0.0", source = "codecraftai" }
 codecraftai-configuration = { version = "<2.0.0", source = "codecraftai" }
 codecraftai-credentials = { version = "<2.0.0", source = "codecraftai" }
 codecraftai-dataprofiles = { version = "<2.0.0", source = "codecraftai" }
-codecraftai-errors = { version = "<2.0.0", source = "codecraftai" }
+codecraftai-foundations = { version = "<2.0.0", source = "codecraftai" }
 codecraftai-extension = { version = "<2.0.0", source = "codecraftai" }
-codecraftai-interfaces = { version = "<2.0.0", source = "codecraftai" }
 codecraftai-interop = { version = "<2.0.0", source = "codecraftai" }
 codecraftai-interop-ext-bluetooth = { version = "<2.0.0", source = "codecraftai" }
 codecraftai-interop-ext-can = { version = "<2.0.0", source = "codecraftai" }
