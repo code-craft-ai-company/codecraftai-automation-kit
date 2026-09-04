@@ -78,6 +78,11 @@ Running Tests
     testbase --root source/testroots/ccai --includes=ccai.tests.singlehost --output=<desired output folder>
 
 - Substitute the ``--includes`` path with any other resource-specific subtree (for example ``ccai.tests.simplecluster``) when appropriate infrastructure exists.
+- Repositories whose jobs are ``DistributedTestJob``\ s (this kit, and anything built on ``testplus``) must run through testplus' own command line instead::
+
+    testplus testing run --root=./source/testroots/ccai --includes=ccai.tests --output=<desired output folder>
+
+  ``testbase testing run`` builds a single-host job with no landscape, and the landscaping couplings require one during framework attachment; the run stops with ``KeyError: 'landscape'`` before any test executes.
 - Always point ``--output`` to a writable directory created for the current run so artifacts do not overlap between executions.
 
 Evaluating Test Results

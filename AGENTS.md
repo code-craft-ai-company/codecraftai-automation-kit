@@ -29,7 +29,20 @@ This folder contains the source code for the Code Craft AI 'Automation Kit' proj
 that companies and organizations can utilize to get test automation projects off the ground and headed in a great direction very rapidly.
 
 # Testing Conventions
-The 'AutomationKit' includes both the 'testbase' and 'testplus' test frameworks.
+The 'AutomationKit' includes both the 'testbase' and 'testplus' test frameworks.  The test root is
+'source/testroots/ccai' (the directory carrying '__testroot__.py'); test packages live under
+'source/testroots/ccai/tests/<package>/singlehost' and '.../distributed'.
+
+Run the tree with testplus' own command line, never with 'testbase testing run':
+
+    testplus testing run --root=./source/testroots/ccai --includes=ccai.tests --output=./.output/<run>
+
+This repository's jobs are DistributedTestJobs; testbase's runner has no landscape and the
+landscaping couplings require one at framework attachment (symptom: KeyError: 'landscape').
+
+Multi-host scenarios under '.../distributed/test_multihost_scenarios.py' are gated: they skip unless
+CCAI_DISTRIBUTED_TESTS=1 is set and the active landscape declares at least two ssh hosts.  The
+localhost helper-cluster scenarios next to them run everywhere.
 
 
 # Code Naming Conventions
@@ -40,8 +53,8 @@ The code structure of this repository follows the [Code Craft AI Python Code Str
 
 Remember to make the test hierarchy match the source hierarchy when adding test files.  For example:
 
-File to test: 'source/packages/ccai/interop/protocols/dns/dnsquestion.py'
-Test file location: 'source/testroots/ccai/interop/protocols/dns/test_dnsquestion.py'
+File to test: 'source/packages/ccai/automationkit/protocols/dns/dnsquestion.py'
+Test file location: 'source/testroots/ccai/tests/automationkit/singlehost/protocols/dns/test_dnsquestion.py'
 
 # Coding Standards
 The code in this repository is meant to be utilized by testing tools and test frameworks.  Therefore, the code must prioritize:

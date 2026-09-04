@@ -63,4 +63,10 @@ jobs:
           poetry install --all-extras
       
       - name: Run Tests
-        run: echo "no test tree in this repository yet; the gate verifies the environment builds"
+        # The kit's jobs are DistributedTestJobs: run them through testplus' own
+        # CLI.  testbase's runner has no landscape and the landscaping couplings
+        # need one at framework attachment (symptom: KeyError: 'landscape').
+        run: |
+          source ./.venv/bin/activate
+          testplus testing run --root=./source/testroots/ccai --includes=ccai.tests --output=./.output/merge-gate
+          deactivate
