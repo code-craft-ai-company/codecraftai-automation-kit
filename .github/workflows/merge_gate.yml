@@ -64,8 +64,9 @@ jobs:
       
       - name: Run Tests
         # The kit's jobs are DistributedTestJobs: run them through testplus' own
-        # CLI.  testbase's runner has no landscape and the landscaping couplings
-        # need one at framework attachment (symptom: KeyError: 'landscape').
+        # CLI.  testbase's runner has no landscape; it works only until a test
+        # package originates landscape couplings at import time (real devices),
+        # then aborts at framework attachment with KeyError: 'landscape'.
         run: |
           source ./.venv/bin/activate
           testplus testing run --root=./source/testroots/ccai --includes=ccai.tests --output=./.output/merge-gate

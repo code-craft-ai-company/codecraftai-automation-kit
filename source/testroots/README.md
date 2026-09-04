@@ -25,14 +25,18 @@ testplus' own command line::
     source .venv/bin/activate
     testplus testing run --root=./source/testroots/ccai --includes=ccai.tests --output=./.output/local
 
-Do NOT use ``testbase testing run`` here.  It builds a plain single-host job
-with no landscape, and the landscaping couplings that testplus brings in
-require one during framework attachment; the symptom is
+Do not use ``testbase testing run`` here.  It builds a plain single-host job
+with no landscape.  That works right up until a test package originates
+landscape couplings at import time -- the moment you add real devices, e.g.
+a package whose ``__init__`` does ``from ccai.landscaping.factories import
+create_landscape, create_linux_client_coordinator_coupling`` -- and then the
+run aborts during framework attachment, before any test executes, with
 
     KeyError: 'landscape'
 
-before any test runs.  ``testplus testing run`` wires the landscape lifecycle;
-an undeclared landscape simply means "no devices".
+``testplus testing run`` wires the landscape lifecycle, so single-host,
+helper-process and device-backed packages all run under one command; an
+undeclared landscape simply means "no devices".
 
 Distributed scenarios
 ---------------------

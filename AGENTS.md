@@ -37,8 +37,10 @@ Run the tree with testplus' own command line, never with 'testbase testing run':
 
     testplus testing run --root=./source/testroots/ccai --includes=ccai.tests --output=./.output/<run>
 
-This repository's jobs are DistributedTestJobs; testbase's runner has no landscape and the
-landscaping couplings require one at framework attachment (symptom: KeyError: 'landscape').
+This repository's jobs are DistributedTestJobs.  testbase's runner has no landscape; it works only
+until a test package originates landscape couplings at import time (any package with real devices),
+after which the run aborts at framework attachment with KeyError: 'landscape'.  testplus' runner
+handles all of the packages under one command.
 
 Multi-host scenarios under '.../distributed/test_multihost_scenarios.py' are gated: they skip unless
 CCAI_DISTRIBUTED_TESTS=1 is set and the active landscape declares at least two ssh hosts.  The

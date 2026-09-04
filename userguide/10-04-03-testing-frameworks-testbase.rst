@@ -82,7 +82,7 @@ Running Tests
 
     testplus testing run --root=./source/testroots/ccai --includes=ccai.tests --output=<desired output folder>
 
-  ``testbase testing run`` builds a single-host job with no landscape, and the landscaping couplings require one during framework attachment; the run stops with ``KeyError: 'landscape'`` before any test executes.
+  ``testbase testing run`` builds a single-host job with no landscape.  It works only until a test package originates landscape couplings at import time (any package with real devices, such as a ``simplecluster`` tree whose ``__init__`` imports ``ccai.landscaping.factories``); from then on the run stops at framework attachment with ``KeyError: 'landscape'`` before any test executes.
 - Always point ``--output`` to a writable directory created for the current run so artifacts do not overlap between executions.
 
 Evaluating Test Results
