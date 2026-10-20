@@ -4,6 +4,17 @@ Code Craft AI Automation Kit
 
 The ``codecraftai-automation-kit`` repository serves as a template repository that companies and organizations can utilize to get test automation projects off the ground and headed in a great direction very rapidly. It ties together the ``codecraftai-*`` suite into a ready-to-brand starting point, with curated conventions, configuration layouts, and an end-to-end user guide.
 
+.. note::
+
+   This is a template repository, not a package, and it is not published to PyPI. Do not install it; start a new
+   project from it instead, with GitHub's **Use this template** button or:
+
+   .. code-block:: bash
+
+      gh repo create <your-project> --template code-craft-ai-company/codecraftai-automation-kit
+
+   The ``codecraftai-*`` packages it builds on are published to PyPI and install from there.
+
 Status
 ======
 
