@@ -15,25 +15,25 @@ classifiers = [
 requires-python = ">=3.10,<4.0"
 dependencies = [
     "pyyaml>=6.0.1,<7.0.0",
-    "codecraftai-arcli<2.0.0",
-    "codecraftai-configuration<2.0.0",
-    "codecraftai-credentials<2.0.0",
-    "codecraftai-dataprofiles<2.0.0",
-    "codecraftai-foundations<2.0.0",
-    "codecraftai-extension<2.0.0",
-    "codecraftai-interop<2.0.0",
-    "codecraftai-interop-ext-bluetooth<2.0.0",
-    "codecraftai-interop-ext-can<2.0.0",
-    "codecraftai-interop-ext-tasker<2.0.0",
-    "codecraftai-interop-ext-upnp<2.0.0",
-    "codecraftai-landscaping<2.0.0",
-    "codecraftai-networking<2.0.0",
-    "codecraftai-runtime<2.0.0",
-    "codecraftai-storage-database<2.0.0",
-    "codecraftai-testbase<2.0.0",
-    "codecraftai-testplus<2.0.0",
-    "codecraftai-this-app<2.0.0",
-    "codecraftai-xmodules<2.0.0",
+    "codecraftai-arcli>=1.0.0,<2.0.0",
+    "codecraftai-configuration>=1.0.0,<2.0.0",
+    "codecraftai-credentials>=1.0.0,<2.0.0",
+    "codecraftai-dataprofiles>=1.0.0,<2.0.0",
+    "codecraftai-foundations>=1.0.0,<2.0.0",
+    "codecraftai-extension>=1.0.0,<2.0.0",
+    "codecraftai-interop>=1.0.0,<2.0.0",
+    "codecraftai-interop-ext-bluetooth>=1.0.0,<2.0.0",
+    "codecraftai-interop-ext-can>=1.0.0,<2.0.0",
+    "codecraftai-interop-ext-tasker>=1.0.0,<2.0.0",
+    "codecraftai-interop-ext-upnp>=1.0.0,<2.0.0",
+    "codecraftai-landscaping>=1.0.0,<2.0.0",
+    "codecraftai-networking>=1.0.0,<2.0.0",
+    "codecraftai-runtime>=1.0.0,<2.0.0",
+    "codecraftai-storage-database>=1.0.0,<2.0.0",
+    "codecraftai-testbase>=1.0.0,<2.0.0",
+    "codecraftai-testplus>=1.0.0,<2.0.0",
+    "codecraftai-this-app>=1.0.0,<2.0.0",
+    "codecraftai-xmodules>=1.0.0,<2.0.0",
 ]
 
 [dependency-groups]
@@ -45,40 +45,6 @@ dev = [
 
 [tool.poetry]
 packages = [{include="ccai", from="source/packages"}]
-
-[tool.poetry.dependencies]
-codecraftai-arcli = {source = "codecraftai"}
-codecraftai-configuration = {source = "codecraftai"}
-codecraftai-credentials = {source = "codecraftai"}
-codecraftai-dataprofiles = {source = "codecraftai"}
-codecraftai-foundations = {source = "codecraftai"}
-codecraftai-extension = {source = "codecraftai"}
-codecraftai-interop = {source = "codecraftai"}
-codecraftai-interop-ext-bluetooth = {source = "codecraftai"}
-codecraftai-interop-ext-can = {source = "codecraftai"}
-codecraftai-interop-ext-tasker = {source = "codecraftai"}
-codecraftai-interop-ext-upnp = {source = "codecraftai"}
-codecraftai-landscaping = {source = "codecraftai"}
-codecraftai-networking = {source = "codecraftai"}
-codecraftai-runtime = {source = "codecraftai"}
-codecraftai-storage-database = {source = "codecraftai"}
-codecraftai-testbase = {source = "codecraftai"}
-codecraftai-testplus = {source = "codecraftai"}
-codecraftai-this-app = {source = "codecraftai"}
-codecraftai-xmodules = {source = "codecraftai"}
-
-[[tool.poetry.source]]
-name = "codecraftai"
-url = "https://code-craft.ai/licensed-repository/simple/"
-priority = "supplemental"
-
-[[tool.uv.index]]
-# Same licensed index as [[tool.poetry.source]]. Listed before PyPI so that
-# codecraftai-* packages (direct and transitive) resolve from it; everything
-# else falls through to PyPI. Credentials: UV_INDEX_CODECRAFTAI_USERNAME /
-# UV_INDEX_CODECRAFTAI_PASSWORD, or `uv auth login`.
-name = "codecraftai"
-url = "https://code-craft.ai/licensed-repository/simple/"
 
 [tool.ruff.lint]
 # Deliberately narrow.  This gate exists for one reason: a bare `except:`
